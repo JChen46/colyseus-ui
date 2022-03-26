@@ -1,0 +1,24 @@
+{
+  "name": "colyseus-ui",
+  "version": "1.0.0",
+  "description": "The client UI for the Hakaton Colyseus multiplayer API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JChen46/colyseus-ui.git"
+  },
+  "author": "John Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JChen46/colyseus-ui/issues"
+  },
+  "homepage": "https://github.com/JChen46/colyseus-ui#readme",
+  "dependencies": {
+    "colyseus.js": "^0.14.13",
+    "three": "^0.139.0"
+  }
+}

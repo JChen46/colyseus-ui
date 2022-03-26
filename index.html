@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/colyseus.js@^0.14.0/dist/colyseus.js"></script>
+  </head>
+  <body>
+    <h1>Test room 1</h1>
+    <script>
+      var client = new Colyseus.Client("ws://localhost:2567");
+      client
+        .joinOrCreate("room_name")
+        .then((room) => {
+          console.log(room.sessionId, "joined", room.name);
+          room.onStateChange(function (state) {
+            console.log("called onStateChange");
+          });
+        })
+        .catch((e) => {
+          console.log("JOIN ERROR ", e);
+        });
+    </script>
+  </body>
+</html>
